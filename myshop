@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Shop</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #102820;
+      color: white;
+      overflow-wrap: break-word;
+    }
+
+    nav {
+      padding: 20px;
+      background: #091b15;
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #f4c76b;
+      text-decoration: none;
+      margin: 5px 12px;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      color: #f4c76b;
+      font-size: 36px;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1d3b30;
+      padding: 22px;
+      border-radius: 10px;
+      width: 180px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      width: 90%;
+      max-width: 600px;
+      height: 250px;
+      object-fit: cover;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .services {
+        padding: 10px;
+        gap: 10px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <h1>Welcome to My Shop</h1>
+    <p>Quality products. Excellent service.</p>
+    <a href="#services"
+       style="display:inline-block;background:#f4c76b;color:#102820;padding:12px 20px;border-radius:6px;text-decoration:none;">
+      Explore our services
+    </a>
+  </header>
+
+  <h2 id="services" style="text-align:center">
+    Our Services
+  </h2>
+
+  <img
+    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900"
+    alt="Shop interior">
+
+  <div class="services">
+    <div class="card">
+      <h3>Quality Products</h3>
+      <p>Products you can trust.</p>
+    </div>
+
+    <div class="card">
+      <h3>Affordable Prices</h3>
+      <p>Great value for your money.</p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Support</h3>
+      <p>We're here to help you.</p>
+    </div>
+  </div>
+
+  <header id="contact">
+    <h2>Contact Us</h2>
+    <p>We look forward to serving you.</p>
+    <a href="https://wa.me/2348102897593"
+       target="_blank"
+       style="display:inline-block;background:#25D366;color:white;padding:12px 20px;border-radius:6px;text-decoration:none;">
+      Chat with us on WhatsApp
+    </a>
+  </header>
+</body>
+</html>
